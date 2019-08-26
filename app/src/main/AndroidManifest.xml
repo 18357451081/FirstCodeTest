@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.test7">
+
     <!-- 拨号申请 -->
     <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 读联系人申请 -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -15,7 +16,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme">
-        <activity android:name=".Chapter9.HttpURLTest"></activity>
+        <service
+            android:name=".Chapter10.ServiceTest"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".Chapter10.Chapter10" />
+        <activity android:name=".Chapter9.HttpURLTest" />
         <activity android:name=".Chapter9.NetActivity" />
         <activity android:name=".Chapter9.WebViewTest" />
         <activity android:name=".Chapter8.PlayVideoTest" />
